@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-01T10:55:00.000Z" agent="Antigravity AI" version="21.0.0" type="device">
+  <diagram id="MuleHunter_Context_Diagram" name="MuleHunter AI - System Context Diagram (Level 0)">
+    <mxGraphModel dx="1422" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1350" pageHeight="950" background="#F8FAFC" math="0" shadow="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- TITLE BLOCK -->
+        <mxCell id="title_block" value="&lt;b style=&quot;font-size: 20px;&quot;&gt;SYSTEM CONTEXT DIAGRAM (LEVEL 0): MULEHUNTER AI&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 13px; color: #64748B;&quot;&gt;Hệ thống Đồ thị Trí tuệ Nhân tạo Liên ngân hàng Phát hiện Mạng lưới Rửa tiền &amp;amp; Tài khoản Rác Thời gian thực&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="275" y="20" width="800" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- BOUNDARY / SYSTEM UNDER CONSIDERATION (CENTER) -->
+        <mxCell id="core_system" value="&lt;div style=&quot;font-size: 16px; font-weight: bold; margin-bottom: 6px;&quot;&gt;MULEHUNTER AI SYSTEM&lt;/div&gt;&lt;div style=&quot;font-size: 12px; line-height: 1.4;&quot;&gt;&lt;b&gt;Trung tâm Phân tích &amp;amp; Giám sát Đồ thị Liên ngân hàng&lt;/b&gt;&lt;br&gt;• In-Memory Dynamic Graph (Memgraph)&lt;br&gt;• Real-time GNN Inference Engine (ONNX)&lt;br&gt;• SLA Ra quyết định: &amp;lt; 500ms&lt;br&gt;• Federated Graph Learning Coordinator&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E293B;strokeColor=#0F172A;strokeWidth=3;fontColor=#FFFFFF;arcSize=10;shadow=1;align=center;verticalAlign=middle;spacing=10;" vertex="1" parent="1">
+          <mxGeometry x="475" y="340" width="400" height="190" as="geometry" />
+        </mxCell>
+
+        <!-- EXTERNAL ENTITY 1: NAPAS & VIETQR GATEWAY (TOP) -->
+        <mxCell id="entity_napas" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;CỔNG CHUYỂN MẠCH QUỐC GIA&lt;br&gt;(NAPAS / VIETQR 247)&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;Hạ tầng định tuyến giao dịch liên ngân hàng&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;strokeColor=#0369A1;strokeWidth=2;fontColor=#FFFFFF;arcSize=8;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="535" y="100" width="280" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- EXTERNAL ENTITY 2: CORE BANKING SYSTEMS (LEFT) -->
+        <mxCell id="entity_banks" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;CÁC NGÂN HÀNG THÀNH VIÊN&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;(Vietcombank, MB, Techcombank...)&lt;br&gt;Core Banking &amp;amp; Hệ thống AML Nội bộ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2563EB;strokeColor=#1D4ED8;strokeWidth=2;fontColor=#FFFFFF;arcSize=8;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="380" width="260" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- EXTERNAL ENTITY 3: REGULATORS & LAW ENFORCEMENT (RIGHT) -->
+        <mxCell id="entity_regulators" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;CƠ QUAN QUẢN LÝ &amp;amp; PHÁP LUẬT&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;• Ngân hàng Nhà nước (Cục PCRT)&lt;br&gt;• Cục An ninh mạng A05 - Bộ Công an&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DC2626;strokeColor=#B91C1C;strokeWidth=2;fontColor=#FFFFFF;arcSize=8;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="380" width="260" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- EXTERNAL ENTITY 4: COMPLIANCE & FRAUD INVESTIGATOR (BOTTOM LEFT) -->
+        <mxCell id="entity_analyst" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;CHUYÊN VIÊN ĐIỀU TRA GIAN LẬN&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;(Fraud Analysts &amp;amp; Compliance Officers)&lt;br&gt;Đội ngũ thanh tra liên ngân hàng&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#475569;strokeColor=#334155;strokeWidth=2;fontColor=#FFFFFF;arcSize=8;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="700" width="270" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- EXTERNAL ENTITY 5: STEP-UP BIOMETRICS SERVICE (BOTTOM RIGHT) -->
+        <mxCell id="entity_biometrics" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;DỊCH VỤ SINH TRẮC HỌC ĐỘNG&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;(Dynamic Step-up Biometrics Engine)&lt;br&gt;Theo chuẩn Quyết định 2345/QĐ-NHNN&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#059669;strokeColor=#047857;strokeWidth=2;fontColor=#FFFFFF;arcSize=8;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="700" width="270" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 1: NAPAS -> MULEHUNTER -->
+        <mxCell id="flow_napas_in" value="Luồng giao dịch liên ngân hàng thời gian thực&lt;br&gt;(Kafka Stream: TxnID, Src, Dst, Amount, Timestamp)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.35;entryY=0;entryDx=0;entryDy=0;exitX=0.35;exitY=1;exitDx=0;exitDy=0;strokeColor=#0284C7;strokeWidth=2;fontColor=#0369A1;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="entity_napas" target="core_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 2: MULEHUNTER -> NAPAS -->
+        <mxCell id="flow_napas_out" value="Quyết định kiểm soát &amp;lt; 500ms&lt;br&gt;(ALLOW / CHALLENGE / BLOCK_HOLD)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.65;entryY=1;entryDx=0;entryDy=0;exitX=0.65;exitY=0;exitDx=0;exitDy=0;strokeColor=#DC2626;strokeWidth=2;fontColor=#B91C1C;labelBackgroundColor=#F8FAFC;fontSize=11;fontStyle=1;" edge="1" parent="1" source="core_system" target="entity_napas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 3: BANKS -> MULEHUNTER -->
+        <mxCell id="flow_banks_in" value="• Trọng số Federated Learning (Local Gradients)&lt;br&gt;• Cập nhật trạng thái tài khoản &amp;amp; Khiếu nại nạn nhân" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.35;entryDx=0;entryDy=0;exitX=1;exitY=0.35;exitDx=0;exitDy=0;strokeColor=#2563EB;strokeWidth=2;fontColor=#1D4ED8;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="entity_banks" target="core_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 4: MULEHUNTER -> BANKS -->
+        <mxCell id="flow_banks_out" value="• Cảnh báo tài khoản rác (Mule Alert API)&lt;br&gt;• Cập nhật mô hình GNN toàn cầu (Global Weights)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.7;entryDx=0;entryDy=0;exitX=0;exitY=0.7;exitDx=0;exitDy=0;strokeColor=#059669;strokeWidth=2;fontColor=#047857;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="core_system" target="entity_banks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 5: REGULATORS -> MULEHUNTER -->
+        <mxCell id="flow_reg_in" value="• Danh sách đen tài khoản tội phạm (Blacklist)&lt;br&gt;• Quy định AML &amp;amp; Ngưỡng giám sát" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.35;entryDx=0;entryDy=0;exitX=0;exitY=0.35;exitDx=0;exitDy=0;strokeColor=#475569;strokeWidth=2;fontColor=#334155;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="entity_regulators" target="core_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 6: MULEHUNTER -> REGULATORS -->
+        <mxCell id="flow_reg_out" value="• Báo cáo Giao dịch Đáng ngờ (Automated STR)&lt;br&gt;• Đồ thị chứng cứ chuỗi rửa tiền phục vụ phá án" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.7;entryDx=0;entryDy=0;exitX=1;exitY=0.7;exitDx=0;exitDy=0;strokeColor=#DC2626;strokeWidth=2;fontColor=#B91C1C;labelBackgroundColor=#F8FAFC;fontSize=11;fontStyle=1;" edge="1" parent="1" source="core_system" target="entity_regulators">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 7: ANALYST <-> MULEHUNTER -->
+        <mxCell id="flow_analyst_in" value="Cấu hình ngưỡng rủi ro, gán nhãn xác nhận (Feedback Loop)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.4;exitY=0;exitDx=0;exitDy=0;strokeColor=#475569;strokeWidth=2;fontColor=#334155;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="entity_analyst" target="core_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow_analyst_out" value="Giao diện Đồ thị động (Interactive Graph) &amp;amp; Giải trình XAI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.38;exitY=1;exitDx=0;exitDy=0;strokeColor=#2563EB;strokeWidth=2;fontColor=#1D4ED8;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="core_system" target="entity_analyst">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DATA FLOW 8: BIOMETRICS <-> MULEHUNTER -->
+        <mxCell id="flow_bio_out" value="Kích hoạt Thách thức Sinh trắc học bổ sung (Step-up Trigger)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.35;entryY=0;entryDx=0;entryDy=0;exitX=0.65;exitY=1;exitDx=0;exitDy=0;strokeColor=#059669;strokeWidth=2;fontColor=#047857;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="core_system" target="entity_biometrics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="flow_bio_in" value="Kết quả xác thực khuôn mặt (Thành công / Thất bại)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.8;entryY=1;entryDx=0;entryDy=0;exitX=0.7;exitY=0;exitDx=0;exitDy=0;strokeColor=#0284C7;strokeWidth=2;fontColor=#0369A1;labelBackgroundColor=#F8FAFC;fontSize=11;" edge="1" parent="1" source="entity_biometrics" target="core_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- NOTE FOOTER -->
+        <mxCell id="footer_note" value="&lt;i&gt;* Ghi chú: Biểu đồ Ngữ cảnh (System Context Diagram - Level 0 DFD) phân định ranh giới giữa MuleHunter AI và các thực thể bên ngoài trong hệ sinh thái tài chính Việt Nam.&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#64748B;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="850" width="800" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

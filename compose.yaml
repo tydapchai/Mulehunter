@@ -1,0 +1,48 @@
+services:
+  memgraph:
+    image: memgraph/memgraph:2.21.0
+    volumes:
+      - graph:/var/lib/memgraph
+  kafka:
+    image: apache/kafka:3.9.1
+    environment:
+      KAFKA_NODE_ID: 1
+      KAFKA_PROCESS_ROLES: broker,controller
+      KAFKA_LISTENERS: PLAINTEXT://:9092,CONTROLLER://:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT
+      KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - kafka:/tmp/kraft-combined-logs
+  api:
+    build: .
+    ports:
+      - "127.0.0.1:${APP_PORT:-8000}:8000"
+    environment:
+      MEMGRAPH_URI: bolt://memgraph:7687
+      KAFKA_BOOTSTRAP: kafka:9092
+      MODEL_PATH: /models/model.onnx
+      CONTINUOUS_REPLAY_PATH: /continuous-replay
+    volumes:
+      - ./artifacts/${MODEL_RUN:-synthetic}:/models:ro
+      - ./artifacts/continuous-replay:/continuous-replay:ro
+    depends_on:
+      - memgraph
+      - kafka
+  consumer:
+    build: .
+    command: ["python", "-m", "mulehunter.service.replay", "--consume"]
+    restart: on-failure
+    environment:
+      SCREEN_URL: http://api:8000
+      KAFKA_BOOTSTRAP: kafka:9092
+    depends_on:
+      - kafka
+      - api
+volumes:
+  graph:
+  kafka:
+

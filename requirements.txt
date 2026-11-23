@@ -1,0 +1,7 @@
+fastapi==0.141.1
+uvicorn==0.53.0
+numpy>=2.2,<3
+onnxruntime>=1.23,<2
+neo4j>=5.28,<6
+kafka-python>=2.2,<4
+httpx==0.28.1

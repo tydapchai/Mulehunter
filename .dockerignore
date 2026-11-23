@@ -1,0 +1,8 @@
+*
+!Dockerfile
+!requirements.txt
+!mulehunter/
+!mulehunter/**
+!web/
+!web/**
+**/__pycache__

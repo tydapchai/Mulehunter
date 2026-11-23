@@ -1,0 +1,254 @@
+{
+  "stack": "compose-memgraph",
+  "host_platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "warmup_s": 3,
+  "health": {
+    "status": "ok"
+  },
+  "runs": [
+    {
+      "target_rps": 50,
+      "repeat": 1,
+      "duration_s": 10.012147199973697,
+      "achieved_rps": 49.939337687855165,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3,
+      "all_successful": {
+        "count": 500,
+        "p50_ms": 196.48,
+        "p95_ms": 357.599,
+        "p99_ms": 394.319
+      },
+      "fast": {
+        "count": 350,
+        "p50_ms": 187.774,
+        "p95_ms": 345.836,
+        "p99_ms": 377.954
+      },
+      "deep": {
+        "count": 150,
+        "p50_ms": 215.901,
+        "p95_ms": 376.03,
+        "p99_ms": 408.678
+      }
+    },
+    {
+      "target_rps": 50,
+      "repeat": 2,
+      "duration_s": 10.00933050000458,
+      "achieved_rps": 49.95339098851529,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3,
+      "all_successful": {
+        "count": 500,
+        "p50_ms": 263.441,
+        "p95_ms": 476.11,
+        "p99_ms": 559.731
+      },
+      "fast": {
+        "count": 350,
+        "p50_ms": 246.961,
+        "p95_ms": 452.298,
+        "p99_ms": 541.693
+      },
+      "deep": {
+        "count": 150,
+        "p50_ms": 278.297,
+        "p95_ms": 503.795,
+        "p99_ms": 596.645
+      }
+    },
+    {
+      "target_rps": 50,
+      "repeat": 3,
+      "duration_s": 10.01278540000203,
+      "achieved_rps": 49.93615462885069,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3,
+      "all_successful": {
+        "count": 500,
+        "p50_ms": 421.777,
+        "p95_ms": 808.038,
+        "p99_ms": 1059.368
+      },
+      "fast": {
+        "count": 350,
+        "p50_ms": 399.268,
+        "p95_ms": 791.286,
+        "p99_ms": 997.809
+      },
+      "deep": {
+        "count": 150,
+        "p50_ms": 486.639,
+        "p95_ms": 851.136,
+        "p99_ms": 1131.266
+      }
+    },
+    {
+      "target_rps": 100,
+      "repeat": 1,
+      "duration_s": 10.001246200001333,
+      "achieved_rps": 55.993022149572255,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3,
+      "all_successful": {
+        "count": 560,
+        "p50_ms": 1752.979,
+        "p95_ms": 1910.066,
+        "p99_ms": 1924.727
+      },
+      "fast": {
+        "count": 392,
+        "p50_ms": 1752.777,
+        "p95_ms": 1910.811,
+        "p99_ms": 1926.326
+      },
+      "deep": {
+        "count": 168,
+        "p50_ms": 1754.058,
+        "p95_ms": 1909.412,
+        "p99_ms": 1921.127
+      }
+    },
+    {
+      "target_rps": 100,
+      "repeat": 2,
+      "duration_s": 10.002377700002398,
+      "achieved_rps": 60.08571341990574,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.2995008319467554,
+      "all_successful": {
+        "count": 601,
+        "p50_ms": 1640.168,
+        "p95_ms": 1839.544,
+        "p99_ms": 1849.313
+      },
+      "fast": {
+        "count": 421,
+        "p50_ms": 1640.168,
+        "p95_ms": 1838.134,
+        "p99_ms": 1849.132
+      },
+      "deep": {
+        "count": 180,
+        "p50_ms": 1640.07,
+        "p95_ms": 1839.751,
+        "p99_ms": 1849.536
+      }
+    },
+    {
+      "target_rps": 100,
+      "repeat": 3,
+      "duration_s": 10.00600160000613,
+      "achieved_rps": 50.86947017874634,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3005893909626719,
+      "all_successful": {
+        "count": 509,
+        "p50_ms": 1955.336,
+        "p95_ms": 2058.492,
+        "p99_ms": 2086.101
+      },
+      "fast": {
+        "count": 356,
+        "p50_ms": 1955.123,
+        "p95_ms": 2057.032,
+        "p99_ms": 2086.402
+      },
+      "deep": {
+        "count": 153,
+        "p50_ms": 1955.336,
+        "p95_ms": 2060.147,
+        "p99_ms": 2085.915
+      }
+    },
+    {
+      "target_rps": 250,
+      "repeat": 1,
+      "duration_s": 10.004333599994425,
+      "achieved_rps": 45.28037729572037,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.2980132450331126,
+      "all_successful": {
+        "count": 453,
+        "p50_ms": 5378.644,
+        "p95_ms": 5684.862,
+        "p99_ms": 5687.549
+      },
+      "fast": {
+        "count": 318,
+        "p50_ms": 5368.548,
+        "p95_ms": 5685.71,
+        "p99_ms": 5687.51
+      },
+      "deep": {
+        "count": 135,
+        "p50_ms": 5388.159,
+        "p95_ms": 5677.234,
+        "p99_ms": 5687.465
+      }
+    },
+    {
+      "target_rps": 250,
+      "repeat": 2,
+      "duration_s": 10.00011209998047,
+      "achieved_rps": 39.49955721004082,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3012658227848101,
+      "all_successful": {
+        "count": 395,
+        "p50_ms": 6188.153,
+        "p95_ms": 6591.043,
+        "p99_ms": 6621.983
+      },
+      "fast": {
+        "count": 276,
+        "p50_ms": 6188.417,
+        "p95_ms": 6584.319,
+        "p99_ms": 6620.502
+      },
+      "deep": {
+        "count": 119,
+        "p50_ms": 6187.156,
+        "p95_ms": 6591.436,
+        "p99_ms": 6632.085
+      }
+    },
+    {
+      "target_rps": 250,
+      "repeat": 3,
+      "duration_s": 10.000048400019296,
+      "achieved_rps": 35.29982914875881,
+      "error_fraction": 0.0,
+      "seed_settled_edges": 256,
+      "deep_fraction": 0.3031161473087819,
+      "all_successful": {
+        "count": 353,
+        "p50_ms": 7074.037,
+        "p95_ms": 7119.009,
+        "p99_ms": 7129.794
+      },
+      "fast": {
+        "count": 246,
+        "p50_ms": 7021.514,
+        "p95_ms": 7119.039,
+        "p99_ms": 7130.185
+      },
+      "deep": {
+        "count": 107,
+        "p50_ms": 7082.809,
+        "p95_ms": 7118.281,
+        "p99_ms": 7128.88
+      }
+    }
+  ]
+}

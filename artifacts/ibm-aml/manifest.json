@@ -1,0 +1,34 @@
+{
+  "source": "HI-Small_Trans.csv",
+  "sha256": "b19d39f515523373f991b689c07e11e7b0b95c17a2c27a87d91584ae16c5b040",
+  "rows": 126959,
+  "limit": 0,
+  "stride": 40,
+  "seed": 42,
+  "epochs": 12,
+  "validation_timestamp": 1662562560.0,
+  "test_timestamp": 1662693360.0,
+  "splits": {
+    "train": {
+      "file": "splits/train.csv",
+      "rows": 88865,
+      "positives": 64,
+      "sha256": "c1729c0a170eba6440d8457cba3b1d704fbe57be0f75296e5291769c1f3447b8"
+    },
+    "validation": {
+      "file": "splits/validation.csv",
+      "rows": 19040,
+      "positives": 23,
+      "sha256": "18ac225a33b4325b168719cb503c4bd11a6054bdd95096431b39a36e2cf1858e"
+    },
+    "test": {
+      "file": "splits/test.csv",
+      "rows": 19054,
+      "positives": 37,
+      "sha256": "fdf80d7254d16a3b4563efce0f81cc15903021586eb0d56042237817ee60f26a"
+    }
+  },
+  "torch": "2.14.0+cpu",
+  "numpy": "2.5.3",
+  "gnn_backend": "torch_geometric.nn.dense.dense_sage_conv"
+}

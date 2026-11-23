@@ -1,0 +1,43 @@
+{
+  "source": "HI-Small_Trans.csv",
+  "model_version": "50d79d869be4",
+  "warmup_start": "2022-09-10T10:00:00+00:00",
+  "start": "2022-09-10T11:00:00+00:00",
+  "end": "2022-09-10T12:00:00+00:00",
+  "warmup_count": 8213,
+  "count": 8071,
+  "alert_threshold": 0.6,
+  "graph_context": "observed historical transfers",
+  "modes": {
+    "gated": {
+      "count": 8071,
+      "positives": 35,
+      "pr_auc_ap": 0.004835311665772711,
+      "roc_auc": 0.5026630164260826,
+      "precision": 0,
+      "recall": 0.0,
+      "alerts_per_1000": 0.0,
+      "true_alerts": 0,
+      "false_alerts": 0,
+      "false_alerts_per_1000": 0.0,
+      "positive_skipped": 30,
+      "positive_scored_below_threshold": 5,
+      "scored": 1327
+    },
+    "all": {
+      "count": 8071,
+      "positives": 35,
+      "pr_auc_ap": 0.01035154980037273,
+      "roc_auc": 0.7474720898812487,
+      "precision": 0,
+      "recall": 0.0,
+      "alerts_per_1000": 0.0,
+      "true_alerts": 0,
+      "false_alerts": 0,
+      "false_alerts_per_1000": 0.0,
+      "positive_skipped": 0,
+      "positive_scored_below_threshold": 35,
+      "scored": 8071
+    }
+  }
+}

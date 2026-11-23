@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-11-01T11:25:00.000Z" agent="Antigravity AI" version="21.0.0" type="device">
+  <diagram id="MuleHunter_Context_Diagram_Radial_Separated" name="MuleHunter AI - System Context Diagram (Two-Way Arrows)">
+    <mxGraphModel dx="1600" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1550" pageHeight="1450" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ========================================== -->
+        <!-- CENTER SYSTEM: MULEHUNTER AI (CIRCLE)       -->
+        <!-- ========================================== -->
+        <mxCell id="center_system" value="&lt;b style=&quot;font-size: 22px; font-family: Arial, Helvetica, sans-serif;&quot;&gt;MULEHUNTER&lt;br&gt;AI SYSTEM&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2;align=center;verticalAlign=middle;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="550" width="240" height="240" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 10 EXTERNAL ENTITIES (RECTANGLES)          -->
+        <!-- ========================================== -->
+
+        <!-- 1. NAPAS (Top-Left) -->
+        <mxCell id="ent_napas" value="NAPAS Payment Switch /&lt;br&gt;VietQR 247 Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 2. Commercial Banks (Top-Right) -->
+        <mxCell id="ent_banks" value="Commercial Member Banks&lt;br&gt;(Core Banking Systems)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="850" y="80" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 3. Compliance & Fraud Analysts (Top-Right Angle) -->
+        <mxCell id="ent_analysts" value="Bank Fraud and&lt;br&gt;Compliance Analysts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="240" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 4. Federated Edge Nodes (Right) -->
+        <mxCell id="ent_federated" value="Bank Federated Learning&lt;br&gt;Edge Nodes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1220" y="510" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 5. SBV AML Dept (Bottom-Right Angle) -->
+        <mxCell id="ent_sbv" value="State Bank of Vietnam&lt;br&gt;(Anti-Money Laundering Dept)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="780" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 6. Ministry of Public Security A05 (Bottom-Right) -->
+        <mxCell id="ent_police" value="Ministry of Public Security&lt;br&gt;(Cyber Crime Dept A05)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1080" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 7. National Citizen Database VNeID (Bottom-Left) -->
+        <mxCell id="ent_vneid" value="National Population Database&lt;br&gt;(VNeID / C06 System)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1080" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 8. Dynamic Step-Up Biometrics (Bottom-Left Angle) -->
+        <mxCell id="ent_biometrics" value="Dynamic Step-Up Biometric&lt;br&gt;Authentication Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="80" y="890" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 9. Case Management / SIEM (Left) -->
+        <mxCell id="ent_siem" value="Internal Bank Case Management&lt;br&gt;&amp;amp; SIEM Security Systems" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="30" y="580" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- 10. Global Sanctions (Top-Left Angle) -->
+        <mxCell id="ent_sanctions" value="Global Sanctions &amp;amp; Threat&lt;br&gt;Intelligence (UN, OFAC)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;align=center;verticalAlign=middle;fontColor=#000000;fontFamily=Arial;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="80" y="270" width="230" height="85" as="geometry" />
+        </mxCell>
+
+        <!-- ========================================== -->
+        <!-- 20 DISTINCT PARALLEL ARROWS (IN & OUT)     -->
+        <!-- Explicit exit/entry anchor points prevent  -->
+        <!-- arrows from overlapping each other!        -->
+        <!-- ========================================== -->
+
+        <!-- 1. NAPAS (Top-Left) -->
+        <!-- IN: Napas -> Center -->
+        <mxCell id="flow_napas_in" value="Real-Time Interbank&lt;br&gt;Transaction Stream" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.35;exitY=1;entryX=0.22;entryY=0.08;" edge="1" parent="1" source="ent_napas" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Napas -->
+        <mxCell id="flow_napas_out" value="Sub-500ms Control Decisions&lt;br&gt;(Allow / Hold / Block)" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.38;exitY=0.02;entryX=0.75;entryY=1;" edge="1" parent="1" source="center_system" target="ent_napas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 2. Commercial Banks (Top-Right) -->
+        <!-- IN: Banks -> Center -->
+        <mxCell id="flow_banks_in" value="Account Status Updates&lt;br&gt;and Victim Disputes" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.25;exitY=1;entryX=0.62;entryY=0.02;" edge="1" parent="1" source="ent_banks" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Banks -->
+        <mxCell id="flow_banks_out" value="Real-Time Mule Account&lt;br&gt;Alerts and Risk Scores" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.78;exitY=0.08;entryX=0.65;entryY=1;" edge="1" parent="1" source="center_system" target="ent_banks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 3. Compliance & Fraud Analysts (Top-Right Angle) -->
+        <!-- IN: Analysts -> Center -->
+        <mxCell id="flow_analysts_in" value="Risk Threshold Configurations&lt;br&gt;and Manual Reviews" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0;exitY=0.3;entryX=0.88;entryY=0.2;" edge="1" parent="1" source="ent_analysts" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Analysts -->
+        <mxCell id="flow_analysts_out" value="Interactive Graph Views&lt;br&gt;and XAI Explanations" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.96;exitY=0.32;entryX=0;entryY=0.75;" edge="1" parent="1" source="center_system" target="ent_analysts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 4. Federated Edge Nodes (Right) -->
+        <!-- IN: Nodes -> Center -->
+        <mxCell id="flow_fed_in" value="Local Model Gradients&lt;br&gt;and Training Metrics" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0;exitY=0.3;entryX=1;entryY=0.44;" edge="1" parent="1" source="ent_federated" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Nodes -->
+        <mxCell id="flow_fed_out" value="Aggregated Global GNN&lt;br&gt;Model Parameters" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=1;exitY=0.56;entryX=0;entryY=0.75;" edge="1" parent="1" source="center_system" target="ent_federated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 5. SBV AML Dept (Bottom-Right Angle) -->
+        <!-- IN: SBV -> Center -->
+        <mxCell id="flow_sbv_in" value="AML Regulations and&lt;br&gt;Reporting Thresholds" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0;exitY=0.3;entryX=0.96;entryY=0.68;" edge="1" parent="1" source="ent_sbv" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> SBV -->
+        <mxCell id="flow_sbv_out" value="Automated Suspicious&lt;br&gt;Transaction Reports (STR)" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.88;entryY=0.75;entryX=0;exitY=0.8;" edge="1" parent="1" source="center_system" target="ent_sbv">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 6. Ministry of Public Security A05 (Bottom-Right) -->
+        <!-- IN: Police -> Center -->
+        <mxCell id="flow_police_in" value="Criminal Blacklists and&lt;br&gt;Account Freeze Orders" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.25;exitY=0;entryX=0.78;entryY=0.92;" edge="1" parent="1" source="ent_police" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Police -->
+        <mxCell id="flow_police_out" value="Subpoena Evidence Graphs&lt;br&gt;and Mule Topologies" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.62;exitY=0.98;entryX=0.65;entryY=0;" edge="1" parent="1" source="center_system" target="ent_police">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 7. National Citizen Database VNeID (Bottom-Left) -->
+        <!-- IN: VNeID -> Center -->
+        <mxCell id="flow_vneid_in" value="Citizen Identity and&lt;br&gt;Biometric Status" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.75;exitY=0;entryX=0.38;entryY=0.98;" edge="1" parent="1" source="ent_vneid" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> VNeID -->
+        <mxCell id="flow_vneid_out" value="CCCD Verification and&lt;br&gt;Holder Lookup Queries" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.22;exitY=0.92;entryX=0.35;entryY=0;" edge="1" parent="1" source="center_system" target="ent_vneid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 8. Dynamic Step-Up Biometrics (Bottom-Left Angle) -->
+        <!-- IN: Bio -> Center -->
+        <mxCell id="flow_bio_in" value="Facial Liveness and&lt;br&gt;Authentication Results" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=1;exitY=0.3;entryX=0.12;entryY=0.8;" edge="1" parent="1" source="ent_biometrics" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Bio -->
+        <mxCell id="flow_bio_out" value="Biometric Challenge Triggers&lt;br&gt;for High-Risk Smurfing" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.04;exitY=0.68;entryX=1;entryY=0.75;" edge="1" parent="1" source="center_system" target="ent_biometrics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 9. Case Management / SIEM (Left) -->
+        <!-- IN: SIEM -> Center -->
+        <mxCell id="flow_siem_in" value="Investigation Outcomes&lt;br&gt;and Resolution Status" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=1;exitY=0.3;entryX=0;entryY=0.44;" edge="1" parent="1" source="ent_siem" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> SIEM -->
+        <mxCell id="flow_siem_out" value="Automated Incident Tickets&lt;br&gt;and Compliance Audit Logs" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0;exitY=0.56;entryX=1;entryY=0.75;" edge="1" parent="1" source="center_system" target="ent_siem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- 10. Global Sanctions (Top-Left Angle) -->
+        <!-- IN: Sanctions -> Center -->
+        <mxCell id="flow_sanc_in" value="Sanction Lists and&lt;br&gt;High-Risk Entity Feeds" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=1;exitY=0.75;entryX=0.04;entryY=0.32;" edge="1" parent="1" source="ent_sanctions" target="center_system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- OUT: Center -> Sanctions -->
+        <mxCell id="flow_sanc_out" value="Sanction Screening and&lt;br&gt;Watchlist Lookup Queries" style="edgeStyle=none;html=1;endArrow=classic;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;fontFamily=Arial;labelBackgroundColor=#FFFFFF;align=center;verticalAlign=middle;exitX=0.12;exitY=0.2;entryX=1;entryY=0.3;" edge="1" parent="1" source="center_system" target="ent_sanctions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

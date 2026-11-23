@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MuleHunter AI</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/cytoscape.min.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header><h1>MuleHunter AI</h1><span>IBM AML historical replay</span></header>
+  <main>
+    <aside>
+      <section aria-labelledby="replay-title">
+        <h2 id="replay-title">Continuous replay</h2>
+        <p id="stream-source" class="muted">Loading dataset…</p>
+        <label>Screening mode<select id="stream-mode">
+          <option value="gated">Fast Path → GraphSAGE</option>
+          <option value="all">GraphSAGE scores every transfer</option>
+        </select></label>
+        <label>Playback speed<select id="stream-speed">
+          <option value="25">25 transfers/s</option><option value="100" selected>100 transfers/s</option>
+          <option value="500">500 transfers/s</option>
+        </select></label>
+        <div class="controls"><button id="start-replay" disabled>Start replay</button>
+          <button id="pause-replay" disabled>Pause</button><button id="reset-replay" disabled>Reset</button></div>
+        <p id="stream-status" role="status"></p>
+        <progress id="stream-progress" aria-label="Replay progress" value="0" max="1"></progress>
+      </section>
+      <details class="tools"><summary>Technical tests</summary>
+      <section>
+        <h2>Screen a transfer</h2>
+        <form id="transfer">
+          <label>Sender<input name="source_account" required value="alice"></label>
+          <label>Recipient<input name="target_account" required value="shop"></label>
+          <label>Amount<input name="amount" type="number" min="1" required value="8500"></label>
+          <label>Currency<input name="currency" required value="VND" maxlength="3" pattern="[A-Z]{3}"></label>
+          <button type="submit">Screen transfer</button>
+        </form>
+      </section>
+      <section>
+        <h2>Replay a scenario</h2>
+        <form id="replay">
+          <label>Pattern<select name="pattern">
+            <option value="normal">Normal transfer</option><option value="fan_in">Fan-in</option>
+            <option value="fan_out">Fan-out (step-up demo)</option><option value="high_risk">High-risk fan-out (hold demo)</option><option value="cycle">Circular routing</option>
+            <option value="pass_through">Pass-through</option>
+          </select></label>
+          <button type="submit">Run replay</button>
+        </form>
+      </section>
+      </details>
+      <p id="message" role="status"></p>
+    </aside>
+    <article>
+      <section aria-labelledby="alerts-title">
+        <h2 id="alerts-title">Investigation queue</h2>
+        <p id="queue-status" class="muted">Start replay to see policy alerts and rule hits.</p>
+        <label class="filter">Show<select id="queue-filter">
+          <option value="all">Policy alerts and rule hits</option><option value="alerts">Policy alerts only</option>
+        </select></label>
+        <div class="table-wrap"><table>
+          <thead><tr><th>UTC time</th><th>Transfer</th><th>Decision</th><th>Evidence</th><th>Score</th></tr></thead>
+          <tbody id="alerts"></tbody>
+        </table></div>
+      </section>
+      <section>
+        <h2>Transaction graph</h2>
+        <p class="muted">Dashed line shows the transfer under review.</p>
+        <div id="graph" aria-label="Transaction graph"></div>
+        <div id="details" aria-live="polite"></div>
+      </section>
+      <section>
+        <h2>Transaction feed</h2>
+        <p class="muted">Most recent transfers in the replay, plus any technical tests you run.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Transfer</th><th>Decision</th><th>Path</th><th>Score</th><th>UTC time</th></tr></thead>
+          <tbody id="decisions"></tbody>
+        </table></div>
+      </section>
+      <section id="evaluation" hidden>
+        <h2>Replay evaluation</h2>
+        <p class="muted">Compared with the dataset labels after screening.</p>
+        <div class="table-wrap" id="evaluation-results"></div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

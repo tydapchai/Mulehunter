@@ -1,0 +1,55 @@
+{
+  "normal": {
+    "decision": "ALLOW",
+    "rule_hits": [],
+    "risk_score": null,
+    "model_version": null,
+    "replay_to_decisions_ms": 2897.65
+  },
+  "fan_in": {
+    "decision": "ALLOW",
+    "rule_hits": [
+      "fan_in"
+    ],
+    "risk_score": 0.0968615710735321,
+    "model_version": "cce829e9e05b",
+    "replay_to_decisions_ms": 78.76
+  },
+  "fan_out": {
+    "decision": "STEP_UP",
+    "rule_hits": [
+      "fan_out"
+    ],
+    "risk_score": 0.6286859512329102,
+    "model_version": "cce829e9e05b",
+    "replay_to_decisions_ms": 79.31
+  },
+  "cycle": {
+    "decision": "ALLOW",
+    "rule_hits": [
+      "cycle",
+      "pass_through"
+    ],
+    "risk_score": 0.0,
+    "model_version": "cce829e9e05b",
+    "replay_to_decisions_ms": 80.04
+  },
+  "pass_through": {
+    "decision": "ALLOW",
+    "rule_hits": [
+      "pass_through"
+    ],
+    "risk_score": 0.002080172300338745,
+    "model_version": "cce829e9e05b",
+    "replay_to_decisions_ms": 77.1
+  },
+  "high_risk": {
+    "decision": "BLOCK_AND_HOLD",
+    "rule_hits": [
+      "fan_out"
+    ],
+    "risk_score": 0.9820034503936768,
+    "model_version": "cce829e9e05b",
+    "replay_to_decisions_ms": 80.16
+  }
+}
